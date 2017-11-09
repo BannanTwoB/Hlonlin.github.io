@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+//		let {a,b,c}={a:'pl',b:"vip",c:10}
+//		console.log(a,b,c)
+//		let str =`
+//			<div>${a}</div>
+//		`
+//		console.log(str)//<div>pl</div>
+		let fn=()=>{
+			let {a,b,c}={a:'pl',b:"vip",c:10}
+		console.log(a,b,c)
+		let str =`
+			<div>${a}</div>
+		`
+		console.log(str)//<div>pl</div>
+		}
+		fn()
+		let fm=(a,b)=>a+b
+		fm()
+		
+		class Call{
+			constructor(name,age){
+				this.name=name;
+				this.age=age;
+			}
+			run(){
+				console.log(this.name)
+			}
+			say(){
+				console.log(this.name+'说'+this.age)
+			}
+		}
+		var t=new Call('bpl',12)
+		t.say()
+	</script>
+</html>
